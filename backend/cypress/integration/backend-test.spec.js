@@ -38,7 +38,7 @@ describe('testing backend', function(){
 
     })
 
-    it.only('Create new bill and edit it', function(){
+    it('Create new bill and edit it', function(){
         cy.validToken().then(( response => {
 
             BillsHelper.CreateBillRequestAndEditIt(cy)
